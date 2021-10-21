@@ -11,10 +11,10 @@ const Option = ({ optionName, optionColor, currentFocus, index, language, onSele
   }, [currentFocus]);
 
   const handleSelect = useCallback(() => {
-    onSelect({index, value: { name: optionName, color: optionColor}})
+    onSelect({index, value: { name: optionName, color: optionColor }})
     buttonRef.current.focus()
     setMenuOpen(false)
-  }, [optionName, optionColor, index, onSelect, setMenuOpen, buttonRef]);
+  }, [optionName, optionColor, index, onSelect, setMenuOpen, buttonRef ]);
 
   return (
     <ListOption

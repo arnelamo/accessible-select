@@ -51,7 +51,7 @@ const useFocus = (size) => {
     };
   }, [handleKeyDown]);
 
-  return [currentFocus, setCurrentFocus, handleButtonKeyPress, menuOpen, setMenuOpen];
+  return [currentFocus, handleButtonKeyPress, menuOpen, setMenuOpen];
 }
 
 export default useFocus;
