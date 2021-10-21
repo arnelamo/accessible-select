@@ -29,7 +29,7 @@ const options = [
 
 const DropDown = ({ onChange, language = 'en' }) => {
   const [selected, setSelected] = useState({ index: 0, value: options[0]});
-  const [currentFocus, setCurrentFocus, handleButtonKeyPress, menuOpen, setMenuOpen] = useFocus(options.length);
+  const [currentFocus, handleButtonKeyPress, menuOpen, setMenuOpen] = useFocus(options.length);
   const buttonRef = useRef()
 
   const toggleOpen = (e) => {
