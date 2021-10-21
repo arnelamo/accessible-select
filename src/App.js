@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import DropDown from "./Dropdown";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        margin: "200px auto 0",
+        width: "800px",
+      }}
+    >
+      <button style={{ marginBottom: 50 }}>dummybutton 1</button>
+      <DropDown onChange={(value) => console.log("returned value:", value)} />
+      <button style={{ marginTop: 50 }}>dummybutton 2</button>
     </div>
   );
-}
+};
 
 export default App;
